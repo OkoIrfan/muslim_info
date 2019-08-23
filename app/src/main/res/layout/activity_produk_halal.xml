@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProdukHalal.ProdukHalal"
+    android:orientation="vertical">
+    <android.support.v7.widget.SearchView
+        android:background="#a0801b"
+        android:id="@+id/search_view"
+        app:queryHint="@string/cari_produk"
+        app:defaultQueryHint="@string/cari_produk"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        android:indeterminate="true"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyeler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
